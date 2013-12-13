@@ -1,0 +1,23 @@
+{
+  "author": {
+    "name": "Sergey Khokhlov",
+    "email": "worldfly@yandex.ru",
+    "url": "https://github.com/skhokhlov"
+  },
+  "name": "gewefope-ui",
+  "description": "Jade/Stylus library for gewefope",
+  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "devDependencies": {
+    "Jade": "*",
+    "borschik": "*",
+    "autoprefixer": "*",
+    "stylus": "*"
+  },
+  "engines": {
+    "node": "*"
+  }
+}
