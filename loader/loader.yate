@@ -1,0 +1,19 @@
+func b-loader(nodeset options) {
+    default = {
+        'size': 'm'
+    }
+
+    b-block('loader', b-extend(default, options))
+}
+
+match .loader b {
+    <span class="b-loader b-loader_size_{.size}">
+        apply . b-main-attrs
+
+        <span class="b-loader__spinner">
+            if .color {
+                @class += " b-loader__spinner_color_{ .color }"
+            }
+        </span>
+    </span>
+}

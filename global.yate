@@ -1,0 +1,3 @@
+include "../../../blocks/logo/logo.yate"
+include "../../../blocks/loader/loader.yate"
+include "../../../blocks/page/page.yate"

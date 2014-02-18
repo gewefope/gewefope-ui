@@ -1,0 +1,29 @@
+func logo(a, b){
+    if a {
+        if b {
+            <div class="b-logo b-logo_slogan b-logo_link">
+                <a href="/" class="b-logo__link">
+                    <h1 class="b-logo__name b-logo">Gewefope</h1>
+                </a>
+                <h2 class="b-logo__slogan">Weather for the people</h2>
+            </div>
+        } else{
+            <div class="b-logo b-logo_slogan b-logo_link">
+                <h1 class="b-logo__name b-logo">Gewefope</h1>
+                <h2 class="b-logo__slogan">Weather for the people</h2>
+            </div>
+        }
+    } else {
+        if b {
+            <div class="b-logo b-logo_slogan b-logo_link">
+                <a href="/" class="b-logo__link">
+                    <h1 class="b-logo__name b-logo">Gewefope</h1>
+                </a>
+            </div>
+        } else {
+            <div class="b-logo b-logo_slogan b-logo_link">
+                <h1 class="b-logo__name b-logo">Gewefope</h1>
+            </div>
+        }
+    }
+}

@@ -1,0 +1,46 @@
+
+
+match / {
+
+    apply .page
+    <div class="b-page__text">{ .username } </div>
+}
+
+match .page {
+    <div class="b-page">
+        <div class="b-page__content">
+            apply .page-blocks.* block
+        </div>
+        logo('true', 'true')
+    </div>
+}
+
+
+// ----------------------------------------------------------------------------------------------------------------- //
+
+match .* block {
+    <div class="b-{ name() }">
+        apply . block-content
+    </div>
+}
+
+match .* block-content {
+    apply .* block
+}
+
+// ----------------------------------------------------------------------------------------------------------------- //
+
+match .* href {
+    @href = apply . href-content
+}
+
+// ----------------------------------------------------------------------------------------------------------------- //
+
+match .app block-content {
+    <div class="b-layout">
+        <div class="b-layout__left">
+            apply .box block
+        </div>
+    </div>
+    <div class="b-page__text">{ .user } </div>
+}
